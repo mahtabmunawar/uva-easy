@@ -1,0 +1,13 @@
+uva-1124
+Author:Mahtab_Munawar
+
+
+#include <stdio.h>
+
+int main()
+{
+    char line[100];
+    while(gets(line))
+        printf("%s", line);
+    return 0;
+}

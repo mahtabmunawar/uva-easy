@@ -1,0 +1,25 @@
+uva-10550
+Author-Mahtab_Munawar
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int a,b,c,d,turn1,turn2,turn3;
+
+    while(cin >> a >> b >> c >> d) {
+        if(a==0&&b==0&&c==0&&d==0) break;
+        if(a<b) turn1=40-(b-a);
+        else turn1= a-b;
+        if(b>c) turn2=40-(b-c);
+        else turn2= c-b;
+        if(c<d) turn3=40-(d-c);
+        else turn3=c-d;
+
+        cout << 360*3+(turn1+turn2+turn3)*9 << endl;
+    }
+
+    return 0;
+}
